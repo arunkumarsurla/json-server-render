@@ -7,7 +7,8 @@ server.use(middlewares);
 server.use(jsonServer.bodyParser);
 server.use('/api', router);
 
+// ✅ Use 0.0.0.0 as host for Render compatibility
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {
-  console.log(`JSON Server is running on port ${PORT}`);
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`JSON Server is running at http://0.0.0.0:${PORT}`);
 });
