@@ -1,0 +1,10 @@
+{
+  "users": [
+    { "id": 1, "name": "Arun", "email": "arun@example.com" },
+    { "id": 2, "name": "Kiran", "email": "kiran@example.com" }
+  ],
+  "tasks": [
+    { "id": 1, "title": "Do homework", "completed": false },
+    { "id": 2, "title": "Workout", "completed": true }
+  ]
+}
